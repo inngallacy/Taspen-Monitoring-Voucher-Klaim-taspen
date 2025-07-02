@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pertanggung Jawab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">TASPEN</div>
+    <nav><a href="index.html">Beranda</a></nav>
+  </header>
+
+  <section class="container">
+    <h2>Pertanggung Jawab</h2>
+    <form id="voucherForm">
+      <input type="hidden" id="tipe" value="Pertanggung Jawab" />
+      <input type="text" id="voucher" placeholder="No Voucher" required />
+      <input type="date" id="tanggal" required />
+      <input type="text" id="catatan" placeholder="Catatan" required />
+      <input type="number" id="jumlah" placeholder="Jumlah" required />
+      <select id="status" required>
+        <option value="">Pilih Status</option>
+        <option value="Terkirim">Terkirim</option>
+        <option value="Dikembalikan">Dikembalikan</option>
+        <option value="Selesai">Selesai</option>
+      </select>
+      <button type="submit">Simpan</button>
+    </form>
+    
+      </section>
+
+  <script src="submit.js"></script>
+</body>
+</html>
