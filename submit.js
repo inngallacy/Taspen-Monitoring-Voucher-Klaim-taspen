@@ -20,7 +20,7 @@ document.getElementById("voucherForm").addEventListener("submit", function(e) {
     alert("✅ Data berhasil disimpan!");
 
     // 2. Kirim ke WhatsApp
-    const waMsg = `Voucher TASPEN\nTipe: ${data.tipe}\nNo: ${data.voucher}\nTanggal: ${data.tanggal}\nCatatan: ${data.catatan}\nJumlah: ${data.jumlah}\nStatus: ${data.status}`;
+    const waMsg = `*Voucher TASPEN*\n*Tipe:* ${data.tipe}\n*No:* ${data.voucher}\n*Tanggal:* ${data.tanggal}\n*Catatan:* ${data.catatan}\n*Jumlah:* ${data.jumlah}\n*Status:* ${data.status}`;
     const waLink = `https://wa.me/6283834134273?text=${encodeURIComponent(waMsg)}`;
     
     window.open(waLink, '_blank');
